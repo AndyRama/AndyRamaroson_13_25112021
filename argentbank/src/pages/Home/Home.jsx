@@ -6,7 +6,7 @@ function Home() {
   return (
     <section>
       <Navbar />
-       <h1>TEST ROUTAGE</h1>
+
 
     </section>
   )
