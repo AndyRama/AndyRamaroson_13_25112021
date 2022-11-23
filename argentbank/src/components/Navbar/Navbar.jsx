@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
-    <nav class="main-nav">
+    <Link class="main-nav">
       <Link class="main-nav-logo"  to="/">
         <img
           class="main-nav-logo-image"
@@ -20,7 +20,7 @@ function NavBar() {
           Sign In
         </Link>
       </div>
-    </nav>
+    </Link>
   )
 }
 

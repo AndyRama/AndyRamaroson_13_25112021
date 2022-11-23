@@ -1,13 +1,11 @@
 import React from "react";
-
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Hero from "../../components/Hero/Hero";
+import image from "./../../assets/bank-tree.jpeg"
 
 function Home() {
   return (
     <section>
-      <Navbar />
-      <Footer />
+      <Hero image={image}/>
     </section>
   )
 }
