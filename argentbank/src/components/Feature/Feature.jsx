@@ -1,5 +1,6 @@
 import React from "react";
 import "./Feature.scss"
+
 import imageChat from "./../../assets/icon-chat.png"
 import imageMoney from "./../../assets/icon-money.png"
 import imageSecu from "./../../assets/icon-security.png"
