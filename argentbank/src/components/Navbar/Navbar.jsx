@@ -2,21 +2,22 @@ import React from "react";
 import "./Navbar.scss"
 import logo from './../../assets/argentBankLogo.png';
 import { Link } from 'react-router-dom';
+import IconUser from "../Icons/IconUser";
 
 function NavBar() {
   return (
-    <Link class="main-nav">
-      <Link class="main-nav-logo"  to="/">
+    <Link className="main-nav">
+      <Link className="main-nav-logo"  to="/">
         <img
-          class="main-nav-logo-image"
+          className="main-nav-logo-image"
           src={logo}
           alt="Argent Bank Logo"
         />
-        <h1 class="sr-only">Argent Bank</h1>
+        <h1 className="sr-only">Argent Bank</h1>
       </Link>
       <div>
-        <Link class="main-nav-item" to="/Login">
-          <i class="fa fa-user-circle"></i>
+        <Link className="main-nav-item" to="/Login/">
+          <IconUser/>
           Sign In
         </Link>
       </div>
