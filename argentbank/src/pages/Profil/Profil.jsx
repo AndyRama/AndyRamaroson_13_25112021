@@ -1,16 +1,16 @@
 import React from "react";
-import Card from "../../components/Card/Card";
-import Welcom from "./../../components/Welcom/Welcom";
+import Account from "../../components/Account/Account";
+import Header from "../../components/Header/Header";
 
 function Profil() {
 
   return(
     <main className="main sign-in bg-dark">
     <section>
-      <Welcom />
-      <Card />
-      <Card />
-      <Card />
+      <Header />
+      <Account />
+      <Account />
+      <Account />
     </section>
     </main>
   )

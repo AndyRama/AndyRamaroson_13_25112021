@@ -42,7 +42,7 @@ function Feature(src, alt, title, text) {
     </div>
   </section>
 
-  //Coponent Refacto after call API work
+  //Component Refacto after call API work
 
   //   <section className="features">
   //   <h2 className="sr-only">Features</h2>

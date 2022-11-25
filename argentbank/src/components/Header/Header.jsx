@@ -1,7 +1,7 @@
 import React from "react";
-import "./Welcom.scss"
+import "./Header.scss"
 
-function Welcom() {
+function Header() {
   return (
     <header className="welcom">      
       <h1>Welcome back<br />Tony Jarvis!</h1>
@@ -10,4 +10,4 @@ function Welcom() {
   )
 }
 
-export default Welcom
+export default Header
