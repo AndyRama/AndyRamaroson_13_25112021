@@ -16,7 +16,12 @@
 
 .main-nav-item {
   text-decoration: none;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
+}
+
+.sign-in-icon {
+  font-size: 2rem;
+  margin-right: 5rem !important;
 }
 
 .main-nav-item:hover {
@@ -32,5 +37,3 @@
   max-width: 100%;
   width: 200px;
 }
-
-
