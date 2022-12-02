@@ -1,7 +1,7 @@
 import React from 'react'
-import Account from '../../components/Account/Account'
-import Header from '../../components/Header/Header'
-import { accountData } from '../../services/data'
+import Account from '../components/Account/Account'
+import Header from '../components/Header/Header'
+import { accountData } from '../services/data'
 
 function Profil() {
   return (
