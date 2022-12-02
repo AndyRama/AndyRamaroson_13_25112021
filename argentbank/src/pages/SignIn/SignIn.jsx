@@ -1,8 +1,8 @@
 import React from 'react'
 import IconUser from '../../components/Icons/IconUser'
-import './Login.scss'
+import './SignIn.scss'
 
-function Login() {
+function SignIn() {
   return (
     <main className="main sign-in bg-dark">
       <section className="sign-in-content">
@@ -32,4 +32,4 @@ function Login() {
   )
 }
 
-export default Login
+export default SignIn

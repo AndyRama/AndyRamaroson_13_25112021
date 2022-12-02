@@ -1,10 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import React from 'react'
 
 import Home from '../pages/Home'
 import NavBar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
-import Login from '../pages/Login/Login'
+import SignIn from '../pages/SignIn/SignIn'
 import Profil from '../pages/Profil'
 
 function Layout() {
@@ -13,7 +12,7 @@ function Layout() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/Login" element={<SignIn />} />
         <Route path="/Profil" element={<Profil />} />
       </Routes>
       <Footer />

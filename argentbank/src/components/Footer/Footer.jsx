@@ -1,6 +1,10 @@
-import React from "react";
-import "./Footer.scss"
+import React from 'react'
+import './Footer.scss'
 
+/**
+ * Render Footer component
+ * @returns {Reactnode} jsx injected in DOM
+ */
 function Footer() {
   return (
     <footer className="footer">

@@ -31,3 +31,10 @@ body {
   width: 1px !important;
   white-space: nowrap !important; /* 3 */
 }
+
+.error-msg {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

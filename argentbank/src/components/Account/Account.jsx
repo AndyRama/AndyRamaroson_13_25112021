@@ -1,5 +1,15 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 import './Account.scss'
+
+/**
+ * Render the Account component
+ *
+ * @param   {object}      props
+ * @param   {string}      props.title           [account title]
+ * @param   {string}      props.amount          [account amount]
+ * @param   {string}      props.description     [account description]
+ * @returns {Reactnode}   jsx injected in DOM
+ */
 
 function Account({ title, amount, description }) {
   return (
@@ -14,6 +24,15 @@ function Account({ title, amount, description }) {
       </div>
     </section>
   )
+}
+
+/**
+ * Account PROPTYPES
+ */
+Account.propTypes = {
+  title: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default Account
