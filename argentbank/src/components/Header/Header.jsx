@@ -22,12 +22,4 @@ function Header() {
   )
 }
 
-/**
- *  Header component
- */
-
-Header.propTypes = {
-  fullName: PropTypes.string.isRequired,
-}
-
 export default Header
