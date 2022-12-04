@@ -5,7 +5,7 @@ import { accountData } from '../services/data'
 
 function Profil() {
   return (
-    <main className="main sign-in bg-dark">
+    <main className="main sign-in__profil bg-dark">
       <Header />
       <input
         className="edit-button"

@@ -3,17 +3,12 @@ import axios from 'axios'
 import IconUser from '../../components/Icons/IconUser'
 import './SignIn.scss'
 
-function SignIn() {
+function SignIn(page) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   // const [submitted, setSubmitted] = useState(false);
   const noEmail = !email
   const noPassword = !password
-
-  // const handleLogin = (event) => {
-  //   event.preventDefault();
-  //   setSubmitted(true);
-  // };
 
   const handleLogin = (event) => {
     event.preventDefault()
@@ -21,7 +16,7 @@ function SignIn() {
     const passwordError = document.querySelector('.password.error-input')
     axios({
       method: 'post',
-      url: 'http://localhost:3001/api/v1/',
+      url: 'http://localhost:3001/api/v1/signIn',
       data: {
         email,
         password,
@@ -33,7 +28,7 @@ function SignIn() {
           emailError.innerHTML = result.data.error.email
           passwordError.innerHTML = result.data.error.password
         } else {
-          window.location = '/profile'
+          window.location = '/profil'
         }
       })
       .catch((error) => console.log(error))
@@ -43,6 +38,7 @@ function SignIn() {
     <main className="main sign-in bg-dark">
       <section className="sign-in-content">
         <IconUser className="sign-in-icon" />
+        {/* <i class="fa fa-user-circle"></i> */}
         <h1>Sign In</h1>
         <form action="" onSubmit={handleLogin} id="sign-in-form">
           <div className="input-wrapper">

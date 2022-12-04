@@ -51,14 +51,14 @@
 }
 
 .sign-in {
-  height: 100vh;
+  height: 80vh;
   padding-top: 20px;
-}
 
-.main {
-  flex: 1;
-}
+  &__profil {
+    height: 100vh;
 
-.bg-dark {
-  background-color: #12002b;
+    @media screen and (max-width: 719px) {
+      height: 110vh;
+    }
+  }
 }
