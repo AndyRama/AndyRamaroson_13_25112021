@@ -3,11 +3,17 @@
   flex-direction: column;
 }
 
-@media (min-width: 920px) {
+@media screen and (min-width: 950px) {
   .features {
-    flex-direction: row;
+    width: 30%;
+    display: inline-flex;
   }
 }
+
+// @media screen and (max-width: 580px) {
+//   .features {
+//   }
+// }
 
 .feature-icon {
   width: 100px;
@@ -18,11 +24,11 @@
 
 .feature-item {
   flex: 1;
-  padding: 2.5rem;
+  padding: 2.1rem;
 
-  .home {
-    display: inline-block;
-  }
+  // .home {
+  //   display: inline-block;
+  // }
 }
 
 .feature-item-title {

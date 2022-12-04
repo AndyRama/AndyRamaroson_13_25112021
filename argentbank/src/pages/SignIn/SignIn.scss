@@ -15,8 +15,8 @@
   background-color: white;
   width: 300px;
   margin: 0 auto;
-  margin-top: 3rem;
-  padding: 2rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
 }
 
 .sign-in-icon {
@@ -51,14 +51,14 @@
 }
 
 .sign-in {
-  height: 80vh;
+  height: 83vh;
   padding-top: 20px;
 
   &__profil {
     height: 100vh;
 
     @media screen and (max-width: 719px) {
-      height: 110vh;
+      height: 91vh;
     }
   }
 }

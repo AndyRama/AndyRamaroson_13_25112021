@@ -8,7 +8,7 @@ import './Feature.scss'
  * @param     {string}        props.src               [picture path source]
  * @param     {string}        props.alt               [picture description]
  * @param     {string}        props.title             [teaser text]
- * @param     {string}        props.paragraph         [punch line]
+ * @param     {string}        props.text         [punch line]
  * @returns   {Reactnode}     jsx injected in DOM
  */
 
@@ -32,7 +32,7 @@ Feature.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  paragraph: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 }
 
 export default Feature
