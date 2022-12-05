@@ -1,4 +1,3 @@
-// import { users } from '../../services/data'
 import './Header.scss'
 
 /**
@@ -10,15 +9,13 @@ import './Header.scss'
  * @params
  */
 
-function Header({firstName}) {
-
+function Header() {
   return (
     <header className="header">
       <h1>
         Welcome back
-       
         <br />
-        {firstName} !
+        AndyRama !
       </h1>
     </header>
   )

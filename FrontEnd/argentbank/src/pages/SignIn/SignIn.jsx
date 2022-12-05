@@ -3,10 +3,10 @@ import axios from 'axios'
 import IconUser from '../../components/Icons/IconUser'
 import './SignIn.scss'
 
-function SignIn() {
+function SignIn(page) {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-
+  // const [submitted, setSubmitted] = useState(false);
   const noEmail = !email
   const noPassword = !password
 
@@ -14,10 +14,9 @@ function SignIn() {
     event.preventDefault()
     const emailError = document.querySelector('.email.error-input')
     const passwordError = document.querySelector('.password.error-input')
-
     axios({
       method: 'post',
-      url: 'http://localhost:3001/api/v1/user/login',
+      url: 'http://localhost:4001/api/v1/user/login',
       data: {
         email,
         password,
@@ -39,6 +38,7 @@ function SignIn() {
     <main className="main sign-in bg-dark">
       <section className="sign-in-content">
         <IconUser className="sign-in-icon" />
+        {/* <i class="fa fa-user-circle"></i> */}
         <h1>Sign In</h1>
         <form action="" onSubmit={handleLogin} id="sign-in-form">
           <div className="input-wrapper">

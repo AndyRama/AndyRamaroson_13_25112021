@@ -24,7 +24,6 @@
     "server": "node ./server/server.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "prettier": "2.8.0"
+    "nodemon": "^2.0.4"
   }
 }
