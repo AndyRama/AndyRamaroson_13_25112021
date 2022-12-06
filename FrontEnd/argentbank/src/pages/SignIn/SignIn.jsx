@@ -3,12 +3,17 @@ import axios from 'axios'
 import IconUser from '../../components/Icons/IconUser'
 import './SignIn.scss'
 
-function SignIn(page) {
+function SignIn() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  // const [submitted, setSubmitted] = useState(false);
+  const [rememberMe, setRememberMe] = useState(false)
+  // const [submitted, setSubmitted] = useState(false)
   const noEmail = !email
   const noPassword = !password
+
+  const handleChangeEmail = (event) => setEmail(event.target.value)
+  const handleChangePassword = (event) => setPassword(event.target.value)
+  const handleChangeRememberMe = () => setRememberMe(!rememberMe)
 
   const handleLogin = (event) => {
     event.preventDefault()
@@ -47,7 +52,7 @@ function SignIn(page) {
               type="text"
               id="email"
               autoComplete="username"
-              onChange={(event) => setEmail(event.target.value)}
+              onChange={handleChangeEmail}
               value={email}
             />
             {noEmail && <small>Email is required</small>}
@@ -58,13 +63,18 @@ function SignIn(page) {
               type="password"
               id="password"
               autoComplete="current-password"
-              onChange={(event) => setPassword(event.target.value)}
+              onChange={handleChangePassword}
               value={password}
             />
             {noPassword && <small>Password is required</small>}
           </div>
           <div className="input-remember">
-            <input type="checkbox" id="remember-me" />
+            <input
+              type="checkbox"
+              id="remember-me"
+              onChange={handleChangeRememberMe}
+              checked={rememberMe}
+            />
             <label htmlFor="remember-me">Remember me</label>
           </div>
           <input type="submit" value="Sign In" className="sign-in-button" />
