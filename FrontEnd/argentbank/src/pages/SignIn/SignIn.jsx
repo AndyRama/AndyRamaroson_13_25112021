@@ -28,11 +28,17 @@ function SignIn() {
       },
     })
       .then((result) => {
-        console.log(result)
         if (result.data.error) {
           emailError.innerHTML = result.data.error.email
           passwordError.innerHTML = result.data.error.password
         } else {
+          // console.log(result.data.body)
+          const token = result.data.body
+          console.log(token)
+          // token Ok => redirect to updateProfile instead of /profil
+          // save token localstorage => utils/store
+          // edit user firstname/lastname
+          //create a newProfile and now redirect to /profil OK
           window.location = '/profil'
         }
       })
