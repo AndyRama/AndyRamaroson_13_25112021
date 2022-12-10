@@ -1,24 +1,28 @@
 import './Header.scss'
+import PropTypes from 'prop-types'
 
 /**
+ * Render the Welcome component
  *
- * @returns Render Header component
  * @param     {object}        props
  * @param     {string}        props.fullName          [complete user name]
  * @returns   {Reactnode}     jsx injected in DOM
- * @params
  */
-
-function Header() {
+export default function Header({ fullName }) {
   return (
     <header className="header">
       <h1>
         Welcome back
         <br />
-        AndyRama !
+        {fullName} !
       </h1>
     </header>
   )
 }
 
-export default Header
+/**
+ * Welcome PROPTYPES
+ */
+Header.propTypes = {
+  fullName: PropTypes.string.isRequired,
+}
