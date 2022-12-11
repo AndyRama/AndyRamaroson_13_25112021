@@ -2,11 +2,12 @@ import React from 'react'
 import Account from '../components/Account/Account'
 import Header from '../components/Header/Header'
 import { accountData } from '../services/data'
+import { user } from './../utils/store'
 
 function Profil() {
   return (
     <main className="main sign-in__profil bg-dark">
-      <Header />
+      <Header fullName={user} />
       <input
         className="edit-button"
         type="submit"

@@ -21,7 +21,7 @@ function SignIn() {
     const passwordError = document.querySelector('.password.error-input')
     axios({
       method: 'post',
-      url: 'http://localhost:4001/api/v1/user/login',
+      url: 'http://localhost:3001/api/v1/user/login',
       data: {
         email,
         password,
@@ -35,10 +35,13 @@ function SignIn() {
           // console.log(result.data.body)
           const token = result.data.body
           console.log(token)
-          // token Ok => redirect to updateProfile instead of /profil
           // save token localstorage => utils/store
-          // edit user firstname/lastname
-          //create a newProfile and now redirect to /profil OK
+          // token Ok => redirect to updateProfile instead of /profil
+          // Move function SignIn axios POST => auth Middelware (login)
+          // Add Reducer => create keys: authReducer and useReducer
+          // Create component UpdateProfil
+          // update page profil
+
           window.location = '/profil'
         }
       })
@@ -49,7 +52,6 @@ function SignIn() {
     <main className="main sign-in bg-dark">
       <section className="sign-in-content">
         <IconUser className="sign-in-icon" />
-        {/* <i class="fa fa-user-circle"></i> */}
         <h1>Sign In</h1>
         <form action="" onSubmit={handleLogin} id="sign-in-form">
           <div className="input-wrapper">
