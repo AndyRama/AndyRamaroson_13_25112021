@@ -1,59 +1,45 @@
 import React, { useState } from 'react'
-import axios from 'axios'
 import IconUser from '../../components/Icons/IconUser'
 import './SignIn.scss'
+
+import { useDispatch, useSelector } from 'react-redux'
+
+import { login } from '../../_store/middlewares/authMiddelware'
 
 function SignIn() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [rememberMe, setRememberMe] = useState(false)
-  // const [submitted, setSubmitted] = useState(false)
-  const noEmail = !email
-  const noPassword = !password
+  const [submitted, setSubmitted] = useState(false)
 
   const handleChangeEmail = (event) => setEmail(event.target.value)
   const handleChangePassword = (event) => setPassword(event.target.value)
   const handleChangeRememberMe = () => setRememberMe(!rememberMe)
 
-  const handleLogin = (event) => {
-    event.preventDefault()
-    const emailError = document.querySelector('.email.error-input')
-    const passwordError = document.querySelector('.password.error-input')
-    axios({
-      method: 'post',
-      url: 'http://localhost:3001/api/v1/user/login',
-      data: {
-        email,
-        password,
-      },
-    })
-      .then((result) => {
-        if (result.data.error) {
-          emailError.innerHTML = result.data.error.email
-          passwordError.innerHTML = result.data.error.password
-        } else {
-          // console.log(result.data.body)
-          const token = result.data.body
-          console.log(token)
-          // save token localstorage => utils/store
-          // token Ok => redirect to updateProfile instead of /profil
-          // Move function SignIn axios POST => auth Middelware (login)
-          // Add Reducer => create keys: authReducer and useReducer
-          // Create component UpdateProfil
-          // update page profil
+  const noEmail = submitted && !email
+  const noPassword = submitted && !password
 
-          window.location = '/profil'
-        }
-      })
-      .catch((error) => console.log(error))
+  const dispatch = useDispatch()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    dispatch(login(email, password, rememberMe))
+    setSubmitted(true)
   }
+
+  const auth = (state) => state.authReducer
+
+  const authUser = useSelector(auth)
+  console.log(authUser)
+  console.log(authUser.error)
+  const wrongEntries = submitted && authUser.error && email && password
 
   return (
     <main className="main sign-in bg-dark">
       <section className="sign-in-content">
         <IconUser className="sign-in-icon" />
         <h1>Sign In</h1>
-        <form action="" onSubmit={handleLogin} id="sign-in-form">
+        <form action="" onSubmit={handleSubmit} id="sign-in-form">
           <div className="input-wrapper">
             <label htmlFor="email">Username</label>
             <input
@@ -87,6 +73,11 @@ function SignIn() {
           </div>
           <input type="submit" value="Sign In" className="sign-in-button" />
         </form>
+      </section>
+      <section>
+        {wrongEntries && (
+          <span className="input-alert--msg">Wrong Email or passsword</span>
+        )}
       </section>
     </main>
   )
