@@ -5,6 +5,7 @@ import Account from '../components/Account/Account'
 import Header from '../components/Header/Header'
 import { accountData } from '../services/data'
 import { user } from './../utils/store'
+// import updateProfile from '../components/UpdateProfile/UpdateProfile'
 
 function Profil() {
   useEffect(() => {
