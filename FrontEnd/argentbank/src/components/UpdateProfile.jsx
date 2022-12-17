@@ -11,12 +11,30 @@ export default function User(props) {
   }, [])
 
   const [firstName, setFirstName] = useState('')
-  const [lastName, setlastName] = useState('')
-  // handleSubmit
-  // HandleEChangeFirstName
-  // changeProfile
-  // HandleEditProfile
+  const [lastName, setLastName] = useState('')
+  const [changeProfile, setChangeProfile] = useState(false)
 
+  const handleChangeFirstName = (event) => setFirstName(event.target.value)
+  const handleChangeLastName = (event) => setLastName(event.target.value)
+
+  const handleEditProfile = () => {
+    props.setEditProfile(false)
+    setFirstName('')
+    setLastName('')
+  }
+  const dispatch = useDispatch()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    if (firstName && lastName) {
+      dispatch(newProfile(firstName, lastName))
+    }
+    setChangeProfile(true)
+  }
+
+  const user = (state) => state.authReducer
+  const currentUser = useSelector(user)
+  console.log(currentUser)
   return (
     <>
       {props.editProfile ? (
@@ -33,7 +51,7 @@ export default function User(props) {
               type="text"
               id="firstName"
               value={firstName}
-              onChange={HandleEChangeFirstName}
+              onChange={handleChangeFirstName}
             />
             {changeProfile && !firstName && (
               <small className="input-error">First name id required</small>
@@ -45,7 +63,7 @@ export default function User(props) {
               type="text"
               id="lastName"
               value={lastName}
-              onChange={HandleEChangelastName}
+              onChange={handleChangeLastName}
             />
             {changeProfile && !lastName && (
               <small className="input-error">Last name id required</small>
@@ -54,9 +72,9 @@ export default function User(props) {
           <input className="update-profil-btn" type="submit" value="Save" />
           <input
             className="cancel-btn"
-            type="btn"
+            type="buttton"
             value="cancel"
-            onClick={HandleEditProfile}
+            onClick={handleEditProfile}
           />
         </section>
       ) : (

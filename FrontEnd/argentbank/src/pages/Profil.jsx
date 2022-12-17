@@ -5,7 +5,7 @@ import Account from '../components/Account/Account'
 import Header from '../components/Header/Header'
 import { accountData } from '../services/data'
 import { user } from './../utils/store'
-// import updateProfile from '../components/UpdateProfile/UpdateProfile'
+import UpdateProfile from '../components/UpdateProfile'
 
 function Profil() {
   useEffect(() => {
@@ -19,10 +19,10 @@ function Profil() {
       {editProfile ? (
         <>
           <h2 className="update-profile-name"> {user}</h2>
-          {/* <UpdateProfile
+          <UpdateProfile
             setEditProfile={setEditProfile}
             editProfile={editProfile}
-          /> */}
+          />
         </>
       ) : (
         <>
