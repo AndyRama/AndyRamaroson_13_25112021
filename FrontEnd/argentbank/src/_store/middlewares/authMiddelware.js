@@ -1,10 +1,16 @@
 import axios from 'axios'
 import { loginUrl } from '../../utils/apiUrls'
 
-import { loginSuccess, loginFailure } from '../actions/authActions'
+import {
+  loginSuccess,
+  loginFailure,
+  logoutSuccess,
+} from '../actions/authActions'
 import {
   setValueToSessionStorage,
   setValueToLocalStorage,
+  clearLocalStorage,
+  clearSessionStorage,
 } from '../../utils/store'
 
 /**
@@ -42,5 +48,16 @@ export function login(email, password, remenberMe) {
       .catch((error) => {
         dispatch(loginFailure(error.message))
       })
+  }
+}
+
+export function logout() {
+  return (dispatch) => {
+    dispatch(logoutSuccess())
+
+    clearSessionStorage()
+    clearLocalStorage()
+
+    window.location.replace(`/`)
   }
 }

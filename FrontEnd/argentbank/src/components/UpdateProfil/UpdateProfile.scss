@@ -1,0 +1,80 @@
+.update-profile-button,
+.cancel-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+}
+
+.update-profile-button {
+  border-color: #00bc77;
+  background-color: #00bc77;
+}
+
+.cancel-button {
+  border-color: #ff6060;
+  background-color: #ff6060;
+}
+
+.update-profile-content {
+  box-sizing: border-box;
+  background-color: white;
+  width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.update-profil-icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.update-profil-name {
+  margin-top: 0;
+  color: white;
+  opacity: 0.5;
+}
+
+.update-profil-icon {
+  margin-right: 0;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper label {
+  font-weight: bold;
+}
+
+.input-wrapper input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.input-wrapper small {
+  position: absolute;
+  top: 3.5rem;
+  color: #ff6060;
+}
+
+.input-alert {
+  height: 3rem;
+  margin: 0 auto;
+  background: #ff6060;
+  width: 300px;
+}
+
+.input-alert--msg {
+  line-height: 3rem;
+  color: white;
+}

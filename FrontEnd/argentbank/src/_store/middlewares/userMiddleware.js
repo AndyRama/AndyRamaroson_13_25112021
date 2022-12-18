@@ -22,7 +22,7 @@ export function newProfile(firstName, lastName) {
       .put(
         profileUrl,
         { firstName, lastName },
-        { headers: { Authorization: `bearer ${token}` } }
+        { headers: { Authorization: `Bearer ${token}` } }
       )
       .then((response) => {
         sessionStorage.length !== 0
