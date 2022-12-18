@@ -6,6 +6,7 @@ import IconUser from '../Icons/IconUser'
 import { user } from '../../utils/store'
 import { useDispatch } from 'react-redux'
 import { logout } from '../../_store/middlewares/authMiddelware'
+import IconLogout from '../Icons/IconLogout'
 
 //after login user is Auth and i can {useDispatch} and {Logout}
 
@@ -33,14 +34,14 @@ function NavBar() {
         ) : (
           <ul className="main-nav-item">
             <li>
-              <Link to="/profile">
-                <IconUser className="sign-in-icon logged-user" />
+              <Link to="/profil">
+                <IconUser />
                 <span className="logged-user">{user}</span>
               </Link>
             </li>
             <li>
               <Link to="/" onClick={handleLogout}>
-                <i className="fa fa-sign-out sign-out-icon"></i>
+                <IconLogout className="sign-out-icon" />
                 <span>Sign Out</span>
               </Link>
             </li>

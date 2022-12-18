@@ -15,8 +15,9 @@ function Layout() {
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<SignIn />} />
         <Route path="/Profil" element={<Profil />} />
-        {/* <PrivateRoute exact path="/Profil" element={<Profil />}> */}{' '}
-        {/* </PrivateRoute> */}
+        {/* <PrivateRoute exact path="/Profil" element={<Profil />}>
+          {' '}
+        </PrivateRoute> */}
       </Routes>
       <Footer />
     </div>

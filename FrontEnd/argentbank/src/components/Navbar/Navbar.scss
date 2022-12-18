@@ -45,7 +45,7 @@
 
 .main-nav-item {
   width: max-content;
-  display: flex;
+  display: block ruby;
   cursor: pointer;
   font-weight: 700;
 }
@@ -57,6 +57,7 @@
 
 .logged-user {
   color: #42b983;
+  margin-left: 0.5rem;
 }
 
 .main-nav-logo {

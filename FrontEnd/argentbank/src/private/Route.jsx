@@ -4,7 +4,7 @@ import { token } from './../utils/store'
 
 export default function PrivateRoute({ children, ...rest }) {
   return (
-    <Route
+    <React.Fragment
       {...rest}
       render={({ location }) =>
         token ? (
@@ -12,13 +12,13 @@ export default function PrivateRoute({ children, ...rest }) {
         ) : (
           <Navigate
             to={{
-              pathName: '/login',
+              pathName: '/Login',
               state: { from: location },
             }}
           />
         )
       }
+      // </React.Fragment>
     />
   )
 }
-// export default PrivateRoute
