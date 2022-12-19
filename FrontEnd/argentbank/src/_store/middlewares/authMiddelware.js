@@ -43,7 +43,7 @@ export function login(email, password, remenberMe) {
             `${response.data.body.user.firstName} ${response.data.body.user.lastName}`
           )
         }
-        window.location.replace('/profil')
+        window.location.replace('/profile')
       })
       .catch((error) => {
         dispatch(loginFailure(error.message))

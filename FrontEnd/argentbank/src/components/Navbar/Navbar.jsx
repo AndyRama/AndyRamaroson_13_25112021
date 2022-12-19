@@ -34,7 +34,7 @@ function NavBar() {
         ) : (
           <ul className="main-nav-item">
             <li>
-              <Link to="/profil">
+              <Link to="/profile">
                 <IconUser />
                 <span className="logged-user">{user}</span>
               </Link>

@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom'
-// import PrivateRoute from './../private/Route'
 
 import Home from '../pages/Home'
 import NavBar from './Navbar/Navbar'
