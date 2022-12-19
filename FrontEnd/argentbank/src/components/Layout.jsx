@@ -5,7 +5,7 @@ import Home from '../pages/Home'
 import NavBar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import SignIn from '../pages/SignIn/SignIn'
-import Profil from '../pages/Profil'
+import Profile from '../pages/Profile'
 
 function Layout() {
   return (
@@ -14,10 +14,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<SignIn />} />
-        <Route path="/Profil" element={<Profil />} />
-        {/* <PrivateRoute exact path="/Profil" element={<Profil />}>
-          {' '}
-        </PrivateRoute> */}
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
       <Footer />
     </div>

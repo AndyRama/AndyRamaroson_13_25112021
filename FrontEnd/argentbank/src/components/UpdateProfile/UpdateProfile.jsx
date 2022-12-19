@@ -4,7 +4,8 @@ import { newProfile } from '../../_store/middlewares/userMiddleware'
 import IconUser from '../Icons/IconUser'
 import './UpdateProfile.scss'
 
-import Profil from '../../pages/Profil'
+import Profil from '../../pages/Profile'
+
 /**
  * Render the UpdateProfile component
  * @param   {object} props

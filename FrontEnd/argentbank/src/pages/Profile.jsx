@@ -1,13 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
-import { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Account from '../components/Account/Account'
 import Header from '../components/Header/Header'
 import { accountData } from '../services/data'
-import { user } from './../utils/store'
-import UpdateProfile from '../components/UpdateProfil/UpdateProfile'
+import { user } from '../utils/store'
+import UpdateProfile from '../components/UpdateProfile/UpdateProfile'
 
-function Profil() {
+function Profile() {
   useEffect(() => {
     document.title = 'Argent Bank | Profile'
   }, [])
@@ -33,6 +31,7 @@ function Profil() {
             value="Edit Name"
             onClick={HandleEditProfile}
           />
+          <h2 className="sr-only">Accounts</h2>
           {accountData.map((item) => (
             <Account
               key={item.id}
@@ -47,4 +46,4 @@ function Profil() {
   )
 }
 
-export default Profil
+export default Profile

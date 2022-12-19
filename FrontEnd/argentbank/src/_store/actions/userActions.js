@@ -9,9 +9,8 @@ import { EDIT_SUCCESS, EDIT_FAILURE } from './_types'
  * @return  {string}  type        user edit name action
  * @return  {object}  payload     user first name, auser last name
  */
-
 export const editSuccess = (firstName, lastName) => ({
-  types: EDIT_SUCCESS,
+  type: EDIT_SUCCESS,
   payload: firstName,
   lastName,
 })
@@ -24,8 +23,7 @@ export const editSuccess = (firstName, lastName) => ({
  * @return  {string}  type      edit failure action
  * @return  {object}  payload   error types on API request
  */
-
 export const editFailure = (error) => ({
-  types: EDIT_FAILURE,
+  type: EDIT_FAILURE,
   payload: error,
 })

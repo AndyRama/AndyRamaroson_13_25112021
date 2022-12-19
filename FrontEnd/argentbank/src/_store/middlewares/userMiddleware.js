@@ -1,13 +1,14 @@
 import axios from 'axios'
 import { profileUrl } from '../../utils/apiUrls'
-import {
-  setValueToSessionStorage,
-  setValueToLocalStorage,
-} from '../../utils/store'
 
 import { editSuccess, editFailure } from '../actions/userActions'
 
 import { token } from '../../utils/store'
+
+import {
+  setValueToSessionStorage,
+  setValueToLocalStorage,
+} from '../../utils/store'
 
 /**
  * PUT NEW USER NAME in API
