@@ -5,6 +5,7 @@ import NavBar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import SignIn from '../pages/SignIn/SignIn'
 import Profile from '../pages/Profile'
+import AuthCheck from '../authCheck/authCheck'
 
 function Layout() {
   return (
@@ -12,8 +13,11 @@ function Layout() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Login" element={<SignIn />} />
-        <Route path="/Profile" element={<Profile />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route
+          path="/profile"
+          element={<AuthCheck Component={<p>Profile</p>} />}
+        />
       </Routes>
       <Footer />
     </div>
