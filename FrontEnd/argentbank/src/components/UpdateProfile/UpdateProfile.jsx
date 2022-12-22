@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { newProfile } from '../../_store/middlewares/userMiddleware'
-import IconUser from '../Icons/IconUser'
 import './UpdateProfile.scss'
 
 import Profil from '../../pages/Profile'
@@ -46,45 +45,40 @@ export default function User(props) {
   return (
     <>
       {props.editProfile ? (
-        <section className="update-profile-content">
-          <IconUser />
-          <h1>Update profile</h1>
+        <section className="update-profile-content header sbg-dark">
+          <h1 className="title-update">Welcome back</h1>
           <form action="" onSubmit={handleSubmit} id="update-profile-form">
-            <div className="input-wrapper">
-              <label htmlFor="firstName">First name</label>
+            <div className="input-wrapper-name">
               <input
                 type="text"
                 id="firstName"
                 value={firstName}
+                placeholder={currentUser.firstName}
                 onChange={handleChangeFirstName}
               />
-              {changeProfile && !firstName && (
+              {/* {changeProfile && !firstName && (
                 <small className="input-error">First name is required</small>
-              )}
-            </div>
-            <div className="input-wrapper">
-              <label htmlFor="lastName">Last name</label>
+              )} */}
               <input
                 type="lastName"
                 id="lastName"
                 value={lastName}
+                placeholder={currentUser.lastName}
                 onChange={handleChangeLastName}
               />
-              {changeProfile && !lastName && (
+              {/* {changeProfile && !lastName && (
                 <small className="input-error">Last name is required</small>
-              )}
+              )} */}
             </div>
-            <input
-              className="update-profile-button"
-              type="submit"
-              value="Save"
-            />
-            <input
-              className="cancel-button"
-              type="button"
-              value="Cancel"
-              onClick={HandleEditProfile}
-            />
+            <div className="input-wrapper-btn">
+              <input type="submit" value="Save" id="save" />
+              <input
+                type="button"
+                value="Cancel"
+                id="cancel"
+                onClick={HandleEditProfile}
+              />
+            </div>
           </form>
         </section>
       ) : (

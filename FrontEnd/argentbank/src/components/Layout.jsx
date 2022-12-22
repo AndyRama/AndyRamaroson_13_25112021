@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import NavBar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 import SignIn from '../pages/SignIn/SignIn'
+// eslint-disable-next-line no-unused-vars
 import Profile from '../pages/Profile'
 import AuthCheck from '../authCheck/authCheck'
 
