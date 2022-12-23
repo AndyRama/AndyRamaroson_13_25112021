@@ -56,9 +56,6 @@ export default function User(props) {
                 placeholder={currentUser.firstName}
                 onChange={handleChangeFirstName}
               />
-              {/* {changeProfile && !firstName && (
-                <small className="input-error">First name is required</small>
-              )} */}
               <input
                 type="lastName"
                 id="lastName"
@@ -66,9 +63,6 @@ export default function User(props) {
                 placeholder={currentUser.lastName}
                 onChange={handleChangeLastName}
               />
-              {/* {changeProfile && !lastName && (
-                <small className="input-error">Last name is required</small>
-              )} */}
             </div>
             <div className="input-wrapper-btn">
               <input type="submit" value="Save" id="save" />
