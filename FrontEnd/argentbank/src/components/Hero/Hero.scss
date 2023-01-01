@@ -28,7 +28,7 @@
   font-size: 0.9rem;
 }
 
-@media (min-width: 920px) {
+@media screen and (min-width: 920px) {
   .hero {
     height: 400px;
     background-position: 0% 33%;

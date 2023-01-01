@@ -45,7 +45,7 @@ export default function User(props) {
   return (
     <>
       {props.editProfile ? (
-        <section className="update-profile-content header sbg-dark">
+        <section className="update-profile-content header">
           <h1 className="title-update">Welcome back</h1>
           <form action="" onSubmit={handleSubmit} id="update-profile-form">
             <div className="input-wrapper-name">

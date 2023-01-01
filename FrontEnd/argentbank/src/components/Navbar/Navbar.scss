@@ -8,6 +8,7 @@
 .main-nav a {
   font-weight: bold;
   color: #2c3e50;
+  display: flex;
 }
 
 .main-nav a.router-link-exact-active {
@@ -58,6 +59,11 @@
 .logged-user {
   color: #42b983;
   margin-left: 0.5rem;
+  margin-top: 0.5rem !important;
+
+  @media screen and (max-width: 516px) {
+    margin-left: 0.5rem;
+  }
 }
 
 .main-nav-logo {

@@ -42,7 +42,7 @@ function NavBar() {
             <li>
               <Link to="/" onClick={handleLogout}>
                 <IconLogout className="sign-out-icon" />
-                <span>Sign Out</span>
+                Sign Out
               </Link>
             </li>
           </ul>
