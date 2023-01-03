@@ -17,7 +17,6 @@ function Profile() {
     <main className="main sign-in__profil bg-dark">
       {editProfile ? (
         <>
-          {/* <h2 className="update-profile-name"> {user}</h2> */}
           <UpdateProfile
             setEditProfile={setEditProfile}
             editProfile={editProfile}

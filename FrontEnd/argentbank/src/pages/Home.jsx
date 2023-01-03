@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './../components/Hero/Hero'
 import image from './../assets/bank-tree.jpeg'
 import Feature from '../components/Feature/Feature'
 import { featureData } from '../services/data'
 
 function Home() {
+  useEffect(() => {
+    document.title = 'Argent Bank | Home'
+  }, [])
+
   return (
     <main className="main home">
       <Hero image={image} />

@@ -57,7 +57,7 @@ export default function User(props) {
                 onChange={handleChangeFirstName}
               />
               <input
-                type="lastName"
+                type="text"
                 id="lastName"
                 value={lastName}
                 placeholder={currentUser.lastName}
