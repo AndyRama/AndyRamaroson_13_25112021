@@ -10,6 +10,7 @@ import Profil from '../../pages/Profile'
  * @param   {object} props
  * @returns {Reactnode} jsx injected in DOM
  */
+
 export default function User(props) {
   useEffect(() => {
     document.title = 'Argent Bank | Update Profile'
@@ -17,6 +18,8 @@ export default function User(props) {
 
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
+
+  // eslint-disable-next-line no-unused-vars
   const [changeProfile, setChangeProfile] = useState(false)
 
   const handleChangeFirstName = (event) => setFirstName(event.target.value)

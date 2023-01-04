@@ -4,7 +4,7 @@ function IconLogout() {
   return (
     <svg
       version="1.1"
-      viewBox="0 0 12 12"
+      viewBox="0 0 9 12"
       height={22}
       width={22}
       xmlns="http://www.w3.org/2000/svg"

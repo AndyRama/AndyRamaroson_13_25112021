@@ -27,7 +27,7 @@ function NavBar() {
       </Link>
       <div>
         {!user ? (
-          <Link className="main-nav-item" to="/Login">
+          <Link className="main-nav-item" id="SignIn" to="/Login">
             <IconUser className="sign-in-icon" />
             Sign In
           </Link>
@@ -41,8 +41,8 @@ function NavBar() {
             </li>
             <li>
               <Link to="/" onClick={handleLogout}>
-                <IconLogout className="sign-out-icon" />
-                Sign Out
+                <IconLogout />
+                <span id="SignOut">Sign Out</span>
               </Link>
             </li>
           </ul>

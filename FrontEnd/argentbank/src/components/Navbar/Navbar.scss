@@ -3,12 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
+
+  @media screen and (max-width: 616px) {
+    padding: 0px 0px;
+  }
 }
 
 .main-nav a {
   font-weight: bold;
   color: #2c3e50;
   display: flex;
+
+  @media screen and (max-width: 616px) {
+    margin-bottom: 5px;
+  }
 }
 
 .main-nav a.router-link-exact-active {
@@ -17,6 +25,19 @@
 
 .main-nav-item {
   text-decoration: none;
+}
+
+#SignIn {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+#SignOut {
+  display: flex;
+  @media screen and (max-width: 616px) {
+    padding-left: 25px;
+  }
 }
 
 .sign-in-icon {
@@ -49,6 +70,10 @@
   display: block ruby;
   cursor: pointer;
   font-weight: 700;
+
+  @media screen and (max-width: 616px) {
+    display: grid;
+  }
 }
 
 .main-nav-item li {
@@ -60,8 +85,9 @@
   color: #42b983;
   margin-left: 0.5rem;
   margin-top: 0.5rem !important;
+  width: 100px;
 
-  @media screen and (max-width: 516px) {
+  @media screen and (max-width: 616px) {
     margin-left: 0.5rem;
   }
 }

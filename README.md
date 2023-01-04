@@ -57,14 +57,14 @@ Use an API for a banking application
 ### Step 1: Launching the back-end
 
 - Clone the project repo: `gh repo clone AndyRama/AndyRamaroson_13_25112021`
-- Go to this folder: `cd backEnd/Server`
+- Go to this folder: `cd BackEnd/server`
 - Install its dependencies: `npm install`
 - Launch back-end on default port: `npm run dev:server`
 - Populate the database (default): `npm run populate-db`
 
 ### Step 2: Launching the front-end
 
-- Go to this folder: `cd frontEnd/Client`
+- Go to this folder: `cd FrontEnd/argentbank`
 - Install its dependencies: `npm install`
 - Launch front-end on port 3000: `npm run start`
 
@@ -130,14 +130,14 @@ Utilisez une API pour une application bancaire
 ### Etape 1 : Lancement du back-end 
 
 - Cloner le repo du projet : `gh repo clone AndyRama/AndyRamaroson_13_25112021`
-- Aller dans ce dossier : `cd backEnd/Server`
+- Aller dans ce dossier : `cd BackEnd/server`
 - Installer ses dépendances : `npm install`
 - Lancer le backEnd sur le port par défaut : `npm run dev:server`
 - Peupler la base de donnée (par défaut) : `npm run populate-db`
 
 ### Etape 2 : Lancement du front-end 
 
-- Aller dans ce dossier : `cd frontEnd/Client `
+- Aller dans ce dossier : `cd FrontEnd/argentbank `
 - Installer ses dépendances : `npm install`
 - Lancer le frontEnd sur le port 3000 : `npm run start`
 
