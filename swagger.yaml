@@ -238,7 +238,6 @@ definitions:
       password:
         type: string
         description: user password
-        example: "*******"
 
   ApiResponse:
     type: object
@@ -258,11 +257,10 @@ definitions:
           firstName:
             type: string
             description: user first name
-            example: Andy
           lastName:
             type: string
             description: user last name
-            example: Rama
+            
             
   LoginResponse:
     type: object
@@ -351,10 +349,6 @@ definitions:
     type: object
     description : Edit category of transaction
     properties :
-        id:
-          type: string
-          description : id of transaction
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
         category:
           type: string
           description: category of transaction
@@ -368,10 +362,6 @@ definitions:
           type: integer
         message:
           type: string
-        id:
-          type: string
-          description : id of transaction
-          example: d290f1ee-6c54-4b01-90e6-d701748f0851
         category:
           type: string
           description: category of transaction

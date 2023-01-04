@@ -1,72 +1,147 @@
-# Project #13 - Argent Bank API - Base
+# ArgentBank 🇬🇧
 
-This codebase contains the code needed to run the backend for Argent Bank.
+**Personnal bank account manager**
 
-## Getting Started
+<kbd>![dashboard](./ArgentBank_2.png)</kbd>
 
-### Prerequisites
+> Issue
 
-Argent Bank uses the following tech stack:
+Use an API for a banking application
 
-- [Node.js v12](https://nodejs.org/en/)
-- [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+> Needs
 
-Please make sure you have the right versions and download both packages. You can verify this by using the following commands in your terminal:
+- Authentication: secure access to the service to manage your bank account and user profile.
+- Transactions API: backend framework template for this feature.
+
+## Skills developed
+
+- [x] Implement a state manager in a React `REDUX` application
+- [x] Interact with an `AXIOS API | MONGOdb`
+- [x] Implement an authentication system to a secure API `JWT token`
+- [x] Modeling a `SWAGGER API | NODEjs`
+
+## Resources Provided
+
+* [API](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
+* [API documentation](http://localhost:3001/api-docs/)
+* [Issues](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/.github/ISSUE_TEMPLATE)
+* [Maquettes](https://github.com/AndyRama/AndyRamaroson_13_25112021/tree/master/FrontEnd/designs/wireframes)
+* [more details - Product](https://github.com/AndyRama/AndyRamaroson_13_25112021/blob/master/README.md)
+
+## Libraries
+
+    REACT
+
+## Install
+
+### Recommended editor
+
+* [Visual Studio code](https://code.visualstudio.com/)
+
+### Requirements
+
+* [Git](https://git-scm.com/) to clone repos
+* [nodeJS](https://nodejs.org/fr/)(version 14.20.1) to execute commands
+* [npm](https://www.npmjs.com/) (version 6.14.17) to launch the application (front-end & back-end)
+
+### Dependencies
+
+*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 5.3.0)
+*  [Redux](https://redux.js.org/introduction/getting-started) (version 5.3.0)
+*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 7.2.5)
+*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 1.6.2)
+*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 2.4.0)
+*  [axios](https://www.npmjs.com/package/axios) (version 0.23.0)
+*  [prop-types](https://www.npmjs.com/package/prop-types) (version 15.7.2)
+
+### Step 1: Launching the back-end
+
+- Clone the project repo: `gh repo clone AndyRama/AndyRamaroson_13_25112021`
+- Go to this folder: `cd BackEnd/server`
+- Install its dependencies: `npm install`
+- Launch back-end on default port: `npm run dev:server`
+- Populate the database (default): `npm run populate-db`
+
+### Step 2: Launching the front-end
+
+- Go to this folder: `cd FrontEnd/argentbank`
+- Install its dependencies: `npm install`
+- Launch front-end on port 3000: `npm run start`
 
 ```bash
-# Check Node.js version
-node --version
-
-# Check Mongo version
-mongo --version
+Web Render View URL: http://localhost:3000
+ArgentBank API provides data for users 2 users.
 ```
 
-### Instructions
+--------------------------------------------------
 
-1. Fork this repo
-1. Clone the repo onto your computer
-1. Open a terminal window in the cloned project
-1. Run the following commands:
+# SportSee 🇫🇷
+
+> PROBLEMATIQUE
+
+Utilisez une API pour une application bancaire
+
+> BESOINS
+
+- Authentification : accès sécurisé au service pour gérer son compte bancaire et son profil utilisateur
+- API Transactions : modèle de structure backend pour cette fonctionnalité
+
+## Compétences développées
+
+- [x] Implémenter un gestionnaire d'état dans une application React `REDUX`
+- [x] Interagir avec une API `AXIOS | MONGOdb`
+- [x] Implémenter un système d'authentification à une API sécurisée `JWT token`
+- [x] Modéliser une API `SWAGGER | NODEjs`
+
+## Ressources fournies
+
+* [API](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API)
+* [API documentation](http://localhost:3001/api-docs/)
+* [Issues](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API/tree/master/.github/ISSUE_TEMPLATE)
+* [Maquettes](https://github.com/AndyRama/AndyRamaroson_13_25112021/tree/master/FrontEnd/designs/wireframes)
+* [plus de details - Product](https://github.com/AndyRama/AndyRamaroson_13_25112021/blob/master/README.md)
+
+## Bibliothèques
+
+    REACT
+
+## Installation
+
+### Editeur recommandé
+
+* [Visual Studio code](https://code.visualstudio.com/)
+
+### Prérequis
+
+* [Git] pour cloner les repos.
+* [nodeJS](version 14.20.1) pour exécuter les commandes.
+* [npm](version 6.14.17) pour lancer l'application (back-end & front-end).
+
+### Dépendances
+
+*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 5.3.0)
+*  [Redux](https://redux.js.org/introduction/getting-started) (version 5.3.0)
+*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 7.2.5)
+*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 1.6.2)
+*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 2.4.0)
+*  [axios](https://www.npmjs.com/package/axios) (version 0.23.0)
+*  [prop-types](https://www.npmjs.com/package/prop-types) (version 15.7.2)
+
+### Etape 1 : Lancement du back-end 
+
+- Cloner le repo du projet : `gh repo clone AndyRama/AndyRamaroson_13_25112021`
+- Aller dans ce dossier : `cd BackEnd/server`
+- Installer ses dépendances : `npm install`
+- Lancer le backEnd sur le port par défaut : `npm run dev:server`
+- Peupler la base de donnée (par défaut) : `npm run populate-db`
+
+### Etape 2 : Lancement du front-end 
+
+- Aller dans ce dossier : `cd FrontEnd/argentbank `
+- Installer ses dépendances : `npm install`
+- Lancer le frontEnd sur le port 3000 : `npm run start`
 
 ```bash
-# Install dependencies
-npm install
-
-# Start local dev server
-npm run dev:server
-
-# Populate database with two users
-npm run populate-db
+URL de la vue de rendu Web : http://localhost:3000
+API de ArgentBank fournit des données pour les utilisateurs 2 utilisateurs.
 ```
-
-Your server should now be running at http://locahost:3001 and you will now have two users in your MongoDB database!
-
-## Populated Database Data
-
-Once you run the `populate-db` script, you should have two users in your database:
-
-### Tony Stark
-
-- First Name: `Tony`
-- Last Name: `Stark`
-- Email: `tony@stark.com`
-- Password: `password123`
-
-### Steve Rogers
-
-- First Name: `Steve`,
-- Last Name: `Rogers`,
-- Email: `steve@rogers.com`,
-- Password: `password456`
-
-## API Documentation
-
-To learn more about how the API works, once you have started your local environment, you can visit: http://localhost:3001/api-docs
-
-## Design Assets
-
-Static HTML and CSS has been created for most of the site and is located in: `/designs`.
-
-For some of the dynamic features, like toggling user editing, there is a mock-up for it in `/designs/wireframes/edit-user-name.png`.
-
-And for the API model that you will be proposing for transactitons, the wireframe can be found in `/designs/wireframes/transactions.png`.
