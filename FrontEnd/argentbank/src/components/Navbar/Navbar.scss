@@ -25,12 +25,13 @@
 
 .main-nav-item {
   text-decoration: none;
+  padding-left: 15px;
 }
 
 #SignIn {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  padding-left: 10px !important;
 }
 
 #SignOut {

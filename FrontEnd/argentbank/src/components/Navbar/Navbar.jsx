@@ -29,7 +29,7 @@ function NavBar() {
         {!user ? (
           <Link className="main-nav-item" id="SignIn" to="/Login">
             <IconUser className="sign-in-icon" />
-            Sign In
+            <span id="SignIn">Sign In</span>
           </Link>
         ) : (
           <ul className="main-nav-item">
