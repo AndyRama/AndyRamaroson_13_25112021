@@ -6,6 +6,8 @@
 
 <kbd>![dashboard](./ArgentBank_1.png)</kbd>
 
+<kbd>![dashboard](./ArgentBank_3.png)</kbd>
+
 > Issue
 
 Use an API for a banking application
