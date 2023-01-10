@@ -4,9 +4,9 @@
 
 <kbd>![dashboard](./ArgentBank_2.png)</kbd>
 
-<kbd>![dashboard](./ArgentBank_1.png)</kbd>
-
 <kbd>![dashboard](./ArgentBank_3.png)</kbd>
+
+<kbd>![dashboard](./ArgentBank_1.png)</kbd>
 
 > Issue
 
