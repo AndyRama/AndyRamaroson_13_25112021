@@ -4,6 +4,8 @@
 
 <kbd>![dashboard](./ArgentBank_2.png)</kbd>
 
+<kbd>![dashboard](./ArgentBank_1.png)</kbd>
+
 > Issue
 
 Use an API for a banking application
@@ -46,12 +48,12 @@ Use an API for a banking application
 
 ### Dependencies
 
-*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 5.3.0)
-*  [Redux](https://redux.js.org/introduction/getting-started) (version 5.3.0)
-*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 7.2.5)
-*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 1.6.2)
-*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 2.4.0)
-*  [axios](https://www.npmjs.com/package/axios) (version 0.23.0)
+*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 6.4.3)
+*  [Redux](https://redux.js.org/introduction/getting-started) (version 4.2.0)
+*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 8.0.5)
+*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 2.13.9)
+*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 8.0.5)
+*  [axios](https://www.npmjs.com/package/axios) (version 1.2.0)
 *  [prop-types](https://www.npmjs.com/package/prop-types) (version 15.7.2)
 
 ### Step 1: Launching the back-end
@@ -119,12 +121,12 @@ Utilisez une API pour une application bancaire
 
 ### Dépendances
 
-*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 5.3.0)
-*  [Redux](https://redux.js.org/introduction/getting-started) (version 5.3.0)
-*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 7.2.5)
-*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 1.6.2)
-*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 2.4.0)
-*  [axios](https://www.npmjs.com/package/axios) (version 0.23.0)
+*  [react-router-dom](https://reactrouter.com/web/guides/quick-start) (version 6.4.3)
+*  [Redux](https://redux.js.org/introduction/getting-started) (version 4.2.0)
+*  [react-redux](https://react-redux.js.org/introduction/getting-started) (version 8.0.5)
+*  [redux/toolkit](https://redux-toolkit.js.org/introduction/getting-started) (version 2.13.9)
+*  [redux-thunk](https://redux.js.org/usage/writing-logic-thunks) (version 8.0.5)
+*  [axios](https://www.npmjs.com/package/axios) (version 1.2.0)
 *  [prop-types](https://www.npmjs.com/package/prop-types) (version 15.7.2)
 
 ### Etape 1 : Lancement du back-end 
