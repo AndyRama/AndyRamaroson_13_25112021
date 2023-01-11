@@ -3,10 +3,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-
-  @media screen and (max-width: 616px) {
-    padding: 0px 0px;
-  }
 }
 
 .main-nav a {
@@ -25,7 +21,6 @@
 
 .main-nav-item {
   text-decoration: none;
-  padding-left: 15px;
 }
 
 #SignIn {
@@ -36,9 +31,9 @@
 
 #SignOut {
   display: flex;
-  padding-left: 8px;
-  // @media screen and (max-width: 616px) {
-  // }
+  @media screen and (max-width: 616px) {
+    padding-left: 40px;
+  }
 }
 
 .sign-in-icon {
