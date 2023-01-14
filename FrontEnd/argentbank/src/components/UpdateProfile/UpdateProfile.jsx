@@ -30,6 +30,9 @@ export default function User(props) {
     setLastName('')
   }
 
+  const noFirst = changeProfile && !firstName
+  const noLast = changeProfile && !lastName
+
   const dispatch = useDispatch()
 
   const handleSubmit = (event) => {
@@ -67,6 +70,10 @@ export default function User(props) {
                 onChange={handleChangeLastName}
               />
             </div>
+
+            {noFirst && <span className="first">First name is required</span>}
+            {noLast && <span className="last">Last name is required</span>}
+
             <div className="input-wrapper-btn">
               <input type="submit" value="Save" id="save" />
               <input

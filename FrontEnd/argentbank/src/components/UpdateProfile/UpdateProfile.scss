@@ -5,10 +5,11 @@
 #firstName,
 #lastName {
   margin-right: 18px;
-  width: 220px;
+  width: 230px;
   height: 34px;
   font-weight: bold;
   padding-left: 20px;
+  margin-bottom: 10px;
 }
 
 #save,
@@ -40,4 +41,19 @@
 .input-alert--msg {
   line-height: 3rem;
   color: white;
+}
+
+.first {
+  padding-right: 16px;
+  margin-left: -16px;
+  color: #ff6060;
+
+  // @media screen and (max-width: 375px) {
+  //   padding-right: 16px;
+  //   margin-left: -16px;
+  // }
+}
+
+.last {
+  color: #ff6060;
 }
