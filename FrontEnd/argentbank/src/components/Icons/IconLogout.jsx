@@ -5,8 +5,8 @@ function IconLogout() {
     <svg
       version="1.1"
       viewBox="0 0 9 12"
-      height={22}
-      width={22}
+      height={16}
+      width={15}
       xmlns="http://www.w3.org/2000/svg"
     >
       <polygon

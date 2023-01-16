@@ -36,6 +36,7 @@ export function login(email, password, remenberMe) {
             `${response.data.body.user.firstName} ${response.data.body.user.lastName}`
           )
         }
+
         if (!remenberMe) {
           setValueToSessionStorage('TOKEN', response.data.body.token)
           setValueToSessionStorage(

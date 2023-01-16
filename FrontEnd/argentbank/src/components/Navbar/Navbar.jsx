@@ -36,7 +36,7 @@ function NavBar() {
             <li>
               <Link to="/profile">
                 <IconUser />
-                <span className="logged-user">{user}</span>
+                <span className="logged-user">{user.split(' ')[0]}</span>
               </Link>
             </li>
             <li>

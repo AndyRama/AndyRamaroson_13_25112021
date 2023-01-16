@@ -5,9 +5,9 @@ import './Feature.scss'
  * Render the Feature component
 
  * @param     {object}        props
- * @param     {string}        props.src               [picture path source]
- * @param     {string}        props.alt               [picture description]
- * @param     {string}        props.title             [teaser text]
+ * @param     {string}        props.src          [picture path source]
+ * @param     {string}        props.alt          [picture description]
+ * @param     {string}        props.title        [teaser text]
  * @param     {string}        props.text         [punch line]
  * @returns   {Reactnode}     jsx injected in DOM
  */
