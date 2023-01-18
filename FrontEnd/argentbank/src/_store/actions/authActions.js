@@ -8,6 +8,7 @@ import { LOGIN_SUCCESS, LOGIN_FAILURE, LOGOUT_SUCCESS } from './_types'
  * @return  {string}  type      user login success action
  * @return  {object}  payload   user data
  */
+
 export const loginSuccess = (user) => ({
   type: LOGIN_SUCCESS,
   payload: user,
