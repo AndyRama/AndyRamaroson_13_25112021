@@ -79,7 +79,7 @@ ArgentBank API provides data for users 2 users.
 
 --------------------------------------------------
 
-# SportSee 🇫🇷
+# ArgentBank 🇫🇷
 
 > PROBLEMATIQUE
 
