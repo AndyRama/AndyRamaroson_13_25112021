@@ -44,7 +44,6 @@ export default function User(props) {
     setChangeProfile(true)
   }
 
-  // const user = (state) => state.userReducer;
   const user = (state) => state.authReducer
   const currentUser = useSelector(user)
 
