@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
 
-import Home from '../pages/Home'
 import NavBar from './Navbar/Navbar'
 import Footer from './Footer/Footer'
+import Home from '../pages/Home'
 import SignIn from '../pages/SignIn/SignIn'
 // eslint-disable-next-line no-unused-vars
 import Profile from '../pages/Profile'

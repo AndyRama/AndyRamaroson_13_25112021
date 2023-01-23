@@ -28,10 +28,8 @@ function SignIn() {
   }
 
   const auth = (state) => state.authReducer
-
   const authUser = useSelector(auth)
-  console.log(authUser)
-  console.log(authUser.error)
+
   const wrongEntries = submitted && authUser.error && email && password
 
   return (

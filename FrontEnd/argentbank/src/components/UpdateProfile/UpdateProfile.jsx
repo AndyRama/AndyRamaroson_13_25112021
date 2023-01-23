@@ -24,6 +24,7 @@ export default function User(props) {
 
   const handleChangeFirstName = (event) => setFirstName(event.target.value)
   const handleChangeLastName = (event) => setLastName(event.target.value)
+
   const HandleEditProfile = () => {
     props.setEditProfile(false)
     setFirstName('')
@@ -46,7 +47,6 @@ export default function User(props) {
   // const user = (state) => state.userReducer;
   const user = (state) => state.authReducer
   const currentUser = useSelector(user)
-  console.log(currentUser) // {isAuth, token, user} for userReducer && authReducer
 
   return (
     <>
