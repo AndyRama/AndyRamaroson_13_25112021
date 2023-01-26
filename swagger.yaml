@@ -117,7 +117,6 @@ paths:
           description: Internal Server Error
           
   /user/account/transaction:
-  /user/account/transaction:
      get:
       security:
         - Bearer: []
@@ -180,7 +179,6 @@ paths:
         '500':
           description: Internal Server Error
           
-  /user/account/transaction/{transactionId}/edit/notes:
   /user/account/transaction/{transactionId}/edit/notes:
      put:
       security:
