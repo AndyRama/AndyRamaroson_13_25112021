@@ -116,24 +116,19 @@ paths:
         '500':
           description: Internal Server Error
           
-  /user/account/{accountId}/transactions:
+  /user/account/transaction:
      get:
       security:
         - Bearer: []
       tags:
         - User transaction Module
-      summary: Recover bank account transactions
-      description: API for fetching a user profile to recover transaction for this account 
+      summary: Recover bank account transaction
+      description: API for fetching a user profile to recover transaction  
       parameters:
         - in: header
           type : string
           name: Authorization
           description: Attach Bearer JWT token
-          required: true
-        - in: path
-          name: accountId
-          description: User's account ID
-          type: integer
           required: true
       produces:
         - application/json
@@ -184,7 +179,7 @@ paths:
         '500':
           description: Internal Server Error
           
-  /user/accounts/transaction/{transactionId}/edit/notes:
+  /user/account/transaction/{transactionId}/edit/notes:
      put:
       security:
         - Bearer: []
