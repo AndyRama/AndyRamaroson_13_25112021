@@ -116,7 +116,7 @@ paths:
         '500':
           description: Internal Server Error
           
-  /user/account/transaction:
+  /user/account/transaction/{transactionId}:
      get:
       security:
         - Bearer: []
@@ -129,6 +129,11 @@ paths:
           type : string
           name: Authorization
           description: Attach Bearer JWT token
+          required: true
+        - in: path
+          name: transactionId
+          description: User's transaction ID
+          type: integer
           required: true
       produces:
         - application/json
