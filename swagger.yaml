@@ -134,7 +134,6 @@ paths:
           name: transactionId
           description: User's transaction ID
           type: integer
-          required: true
       produces:
         - application/json
       responses:
@@ -304,7 +303,7 @@ definitions:
 
   TransactionsDetails:
     type: object
-    description : transaction lists for the current month
+    description : transaction recover
     properties:
       status:
         type: integer
